@@ -83,7 +83,7 @@ TradeTab:AddButton({
 
 -- FarmTab
 local FarmTab = Window:MakeTab({
-	  Name = "AutoFarm 🚜",
+	  Name = "AutoFarm",
 	  Icon = "rbxassetid://4483345998",
 	  PremiumOnly = false
 })
