@@ -20,7 +20,7 @@ local DupeTab = Window:MakeTab({
 DupeTab:AddButton({
 	Name = "Equip Egg To Dupe",
 	Callback = function()
-	end    
+	end
 })
 
 --DupeButton2
@@ -28,14 +28,16 @@ DupeTab:AddButton({
 	Name = "Click To Dupe Eggs",
 	Callback = function()
       		print("button pressed")
+	end
+})
+
+--EggEquipNotification
 OrionLib:MakeNotification({
 	Name = "Egg Selector",
 	Content = "Egg Equipped",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
-	end
-})		
 
 --DupeNotification
 OrionLib:MakeNotification({
