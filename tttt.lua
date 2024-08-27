@@ -44,47 +44,46 @@ DupeTab:AddButton({
 	Content = "Egg Equipped",
 	Image = "rbxassetid://4483345998",
 	Time = 5})
-    end    
+    	end    
 })
 
 --DupeButton
 DupeTab:AddButton({
 	Name = "Click To Dupe Eggs",
 	Callback = function()
-
---DupeNotification
-OrionLib:MakeNotification({
+		OrionLib:MakeNotification({
 	Name = "Duping Eggs....",
 	Content = "Duping is in process..[Takes around 4-5 minutes] Do not leave the game. May require game restart to take effect.",
 	Image = "rbxassetid://4483345998",
 	Time = 10})
   	end    
 })
+		
 --DupeParagraph
 DupeTab:AddParagraph("*READ*","The Feature - Dupe Eggs - Will Not Work if you're in a private server")
 
 
 -- TradeTab
 local TradeTab = Window:MakeTab({
-    Name = "Trade Scam🙈",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
+	Name = "Trade Scam🙈",
+	Icon = "rbxassetid://4483345998",
+    	PremiumOnly = false
 })
 
 -- TradeTextBox
 TradeTab:AddTextbox({
-    Name = "Username",
-    Default = "Player",
-    TextDisappear = false,
-    Callback = function()
-    end      
+    	Name = "Username",
+    	Default = "Player",
+    	TextDisappear = false,
+    	Callback = function()
+    	end      
 })
 
 -- TradeButton
 TradeTab:AddButton({
 	Name = "Freeze Trade To The Victim",
 	Callback = function()
-	OrionLib:MakeNotification({
+		OrionLib:MakeNotification({
 	Name = "Freeze Trade Enabled",
 	Content = "Remove your offer. The victim can not see that you've removed items/pets.",
 	Image = "rbxassetid://4483345998",
@@ -95,9 +94,9 @@ TradeTab:AddButton({
 
 -- FarmTab
 local FarmTab = Window:MakeTab({
-    Name = "AutoFarm 🚜",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
+    	Name = "AutoFarm 🚜",
+    	Icon = "rbxassetid://4483345998",
+   	 PremiumOnly = false
 })
 
 FarmTab:AddToggle({
@@ -120,10 +119,10 @@ FarmTab:AddToggle({
 
 -- FarmButton
 FarmTab:AddButton({
-    Name = "[TrustedScript📄] - Get AutoFarm Source ✅",
-    Callback = function()
+	Name = "[TrustedScript📄] - Get AutoFarm Source ✅",
+	Callback = function()
           	print("button pressed")
-  	end    
+	end    
 })
 
 --BucksTab
