@@ -25,7 +25,7 @@ DupeTab:AddButton({
 	Content = "Egg Equipped",
 	Image = "rbxassetid://4483345998",
 	Time = 5})
-    end    
+end    
 })
 
 --DupeButton
@@ -40,8 +40,9 @@ OrionLib:MakeNotification({
 May require game restart to take effect.",
 	Image = "rbxassetid://4483345998",
 	Time = 5})
-  	end    
+end    
 })
+
 --DupeParagraph
 DupeTab:AddParagraph("*READ*","The Feature - Dupe Eggs - Will Not Work if you're in a private server")
 
@@ -59,7 +60,7 @@ TradeTab:AddTextbox({
     Default = "Player",
     TextDisappear = false,
     Callback = function()
-    end      
+end      
 })
 
 -- TradeButton
@@ -67,14 +68,16 @@ TradeTab:AddButton({
 	Name = "Activate Freeze Trade",
 	Callback = function()
       		print("button pressed")
-    end    
+end    
 })
-    OrionLib:MakeNotification({
-    Name = "Freeze Trade Enabled",
-    Content = "Remove your offer. The victim can not see that you've removed items/pets.",
+
+OrionLib:MakeNotification({
+	Name = "Freeze Trade Enabled",
+	Content = "Remove your offer. The victim can not see that you've removed items/pets.",
 	Image = "rbxassetid://4483345998",
 	Time = 5
-    })
+})
+
 
 -- FarmTab
 local FarmTab = Window:MakeTab({
@@ -87,14 +90,14 @@ FarmTab:AddToggle({
 	Name = "Pet Farm",
 	Default = false,
 	Callback = function(value)
-	end    
+end    
 })
 
 FarmTab:AddToggle({
 	Name = "Baby Farm",
 	Default = false,
 	Callback = function()
-	end    
+end    
 })
 
 -- FarmButton
@@ -102,7 +105,7 @@ FarmTab:AddButton({
     Name = "[TrustedScript] - Get AutoFarm Source",
     Callback = function()
           	print("button pressed")
-  	end    
+end    
 })
 
 --BucksTab
@@ -117,7 +120,7 @@ BucksTab:AddButton({
     Name = "Get Infinite Bucks",
     Callback = function()
         Print("button pressed")
-    end    
+end    
 })
 
 -- MFR-NFR ChangerTab
@@ -132,7 +135,7 @@ ChangerTab:AddButton({
     Name = "MFR Changer-(Inventory)",
 	Callback = function()
       		print("button pressed")
-  	end    
+end    
 })
 
 -- ChangerButton2
