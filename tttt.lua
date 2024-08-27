@@ -1,24 +1,11 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
 local Window = OrionLib:MakeWindow({Name = "CK Hub | Adopt Me Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "AdoptMeConfig"})
 
 -- Values
-_G.PetFarm = True
-_G.BabyFarm = True
 
 
 -- Functions
-Function BabyFarm()
-    while _G.BabyFarm == True do
-        ReplicatedStorage.API["TeamAPI/ChooseTeam"]:InvokeServer("Babies", true)
-    end
-end
-
-Function PetFarm()
-    while _G.PetFarm == True do
-        ReplicatedStorage.API["TeamAPI/ChooseTeam"]:InvokeServer("Parents", true)
-    end
-end
-
 
 
 OrionLib:MakeNotification({
@@ -30,20 +17,21 @@ OrionLib:MakeNotification({
 
 -- DupeTab
 local DupeTab = Window:MakeTab({
-    Name = "Dupe Eggs 🥚",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
+	Name = "Dupe Eggs",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
 })
 
 -- DupeButton
 DupeTab:AddButton({
-	Name = "Equip Egg To Dupe",
+	Name = "Equip Egg To Dupe, Then Click Button",
 	Callback = function()
       		OrionLib:MakeNotification({
-	Name = "Egg Selector",
+	Name = "Equip Egg To Dupe",
 	Content = "Egg Equipped",
 	Image = "rbxassetid://4483345998",
 	Time = 5})
+		print("button pressed")
     	end    
 })
 
@@ -56,6 +44,7 @@ DupeTab:AddButton({
 	Content = "Duping is in process..[Takes around 4-5 minutes] Do not leave the game. May require game restart to take effect.",
 	Image = "rbxassetid://4483345998",
 	Time = 10})
+		print("button pressed")
   	end    
 })
 		
@@ -65,7 +54,7 @@ DupeTab:AddParagraph("*READ*","The Feature - Dupe Eggs - Will Not Work if you're
 
 -- TradeTab
 local TradeTab = Window:MakeTab({
-	Name = "Trade Scam🙈",
+	Name = "Trade Scam",
 	Icon = "rbxassetid://4483345998",
     	PremiumOnly = false
 })
@@ -94,62 +83,60 @@ TradeTab:AddButton({
 
 -- FarmTab
 local FarmTab = Window:MakeTab({
-    	Name = "AutoFarm 🚜",
-    	Icon = "rbxassetid://4483345998",
-   	 PremiumOnly = false
+	Name = "AutoFarm 🚜",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
 })
 
 FarmTab:AddToggle({
 	Name = "Pet Farm",
 	Default = false,
 	Callback = function(value)
-		_G.PetFarm == value
-        petfarm()
-	end    
+		print(value)
+	end
 })
 
 FarmTab:AddToggle({
 	Name = "Baby Farm",
 	Default = false,
-	Callback = function()
-		_G.BabyFarm == value
-        BabyFarm()
-	end    
+	Callback = function(value)
+		print(value)
+	end
 })
 
 -- FarmButton
 FarmTab:AddButton({
-	Name = "[TrustedScript📄] - Get AutoFarm Source ✅",
+	Name = "[TrustedScript] - Get AutoFarm Source",
 	Callback = function()
           	print("button pressed")
-	end    
+	end
 })
 
 --BucksTab
 local BucksTab = Window:MakeTab({
-    Name = "Infinite Bucks",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
+    	Name = "Infinite Bucks",
+    	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
 })
 
 -- BucksButton
 BucksTab:AddButton({
-    Name = "Get Infinite Bucks",
-    Callback = function()
-        require(game:service'ReplicatedStorage'.Fsys).load("ClientData").update("money",(15999999984/16))
-    end    
+    	Name = "Get Infinite Bucks",
+    	Callback = function()
+		print("button pressed")
+    	end    
 })
 
 -- MFR-NFR ChangerTab
 local ChangerTab = Window:MakeTab({
-    Name = "MFR-NFR Changer",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
+    	Name = "MFR-NFR Changer",
+   	Icon = "rbxassetid://4483345998",
+    	PremiumOnly = false
 })
 
 -- ChangerButton1
 ChangerTab:AddButton({
-    Name = "MFR Changer-(Inventory)",
+	Name = "MFR Changer-(Inventory)",
 	Callback = function()
       		print("button pressed")
   	end    
@@ -157,9 +144,9 @@ ChangerTab:AddButton({
 
 -- ChangerButton2
 ChangerTab:AddButton({
-    Name = "NFR Changer-(Inventory)",
-    Callback = function()
-            print("button pressed")
+    	Name = "NFR Changer-(Inventory)",
+	Callback = function()
+		print("button pressed")
   	end    
 })
 
