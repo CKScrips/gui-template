@@ -1,6 +1,6 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-local Window = OrionLib:MakeWindow({Name = "CK Hub | Adopt Me Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "AdoptMeConfig"})
+local Window = OrionLib:MakeWindow({Name = "CKScripHub | Adopt Me Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "AdoptMeConfig"})
 
 -- Values
 
@@ -12,7 +12,7 @@ OrionLib:MakeNotification({
     Name = "Script Successfully Loaded",
     Content = "Loading Has been successful!",
     Image = "rbxassetid://17849312358",
-    Time = 30
+    Time = 15
 })
 
 -- DupeTab
