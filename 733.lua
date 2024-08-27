@@ -17,14 +17,14 @@ OrionLib:MakeNotification({
 
 -- DupeTab
 local DupeTab = Window:MakeTab({
-	  Name = "Dupe Eggs",
+	  Name = "Dupe Egg/Pet",
 	  Icon = "rbxassetid://4483345998",
 	  PremiumOnly = false
 })
 
 -- DupeButton
 DupeTab:AddButton({
-	  Name = "Equip Egg To Dupe, Then Click Button",
+	  Name = "Equip egg to dupe, then click here",
 	  Callback = function()
       		OrionLib:MakeNotification({
 	  Name = "Equip Egg To Dupe",
@@ -32,16 +32,42 @@ DupeTab:AddButton({
 	  Image = "rbxassetid://4483345998",
 	  Time = 5})
 		    print("button pressed")
-    end    
+	end    
 })
 
 --DupeButton
 DupeTab:AddButton({
-	  Name = "Click To Dupe Eggs",
+	  Name = "Click To Dupe Egg",
 	  Callback = function()
 		    OrionLib:MakeNotification({
-	  Name = "Duping Eggs....",
-	  Content = "Duping is in process..[Takes around 4-5 minutes] Do not leave the game. May require game restart to take effect.",
+	  Name = "Duping Egg....",
+	  Content = "Duping is in process..[May take up to 10 minutes] Do not leave the game.",
+	  Image = "rbxassetid://4483345998",
+	  Time = 10})
+		    print("button pressed")
+  	end    
+})
+
+-- DupeButton
+DupeTab:AddButton({
+	  Name = "Equip pet to dupe, then click here.",
+	  Callback = function()
+      		OrionLib:MakeNotification({
+	  Name = "Equip Pet To Dupe",
+	  Content = "Pet Equipped",
+	  Image = "rbxassetid://4483345998",
+	  Time = 5})
+		    print("button pressed")
+    	end    
+})
+
+--DupeButton
+DupeTab:AddButton({
+	  Name = "Click To Dupe Pet",
+	  Callback = function()
+		    OrionLib:MakeNotification({
+	  Name = "Duping Egg....",
+	  Content = "Duping is in process..[May take up to 10 minutes] Do not leave the game.",
 	  Image = "rbxassetid://4483345998",
 	  Time = 10})
 		    print("button pressed")
@@ -49,7 +75,7 @@ DupeTab:AddButton({
 })
 		
 --DupeParagraph
-DupeTab:AddParagraph("*READ*","The Feature - Dupe Eggs - Will Not Work if you're in a private server")
+DupeTab:AddParagraph("*READ*","The Feature - Dupe Eggs - Will Not Work if you're in a private server.")
 
 
 -- TradeTab
@@ -62,7 +88,7 @@ local TradeTab = Window:MakeTab({
 -- TradeTextBox
 TradeTab:AddTextbox({
     	Name = "Username",
-    	Default = "Player",
+    	Default = " ",
     	TextDisappear = false,
     	Callback = function()
     	end      
@@ -80,6 +106,8 @@ TradeTab:AddButton({
       		  print("button pressed")
   	end    
 })
+TradeTab:AddParagraph("*READ*","The function - Freeze Trade - will not work in private servers or full public servers.")
+TradeTab:AddParagraph("This trade needs to look and sound convincing. You must have pets of value to get your victim to accept it.")
 
 -- FarmTab
 local FarmTab = Window:MakeTab({
