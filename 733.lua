@@ -113,6 +113,7 @@ FarmTab:AddButton({
           print("button pressed")
 	  end
 })
+FarmTab:AddParagraph("*READ*","To avoid glitching, do not use pet farm and baby farm at the same time.")
 
 --BucksTab
 local BucksTab = Window:MakeTab({
@@ -131,7 +132,7 @@ BucksTab:AddButton({
 
 -- MFR-NFR ChangerTab
 local ChangerTab = Window:MakeTab({
-    	Name = "MFR-NFR Changer",
+    	Name = "MFR/NFR Pets",
    	  Icon = "rbxassetid://4483345998",
     	PremiumOnly = false
 })
@@ -152,7 +153,7 @@ ChangerTab:AddToggle({
 		      print(value)
 	  end
 })
-ChangerTab:AddParagraph("*READ*","To avoid glitching, do not use pet farm and baby farm at the same time.")
+ChangerTab:AddParagraph("*READ*","Pets do not stay MFR/NFR. If you try to trade them, they will show in trade as normal pets.")
 
 Tab:AddParagraph("*NOTE*","Features May Not Work If You're in a Private Server")
 Tab:AddParagraph("Script Successfully Loaded!","Enjoy The Script!")
