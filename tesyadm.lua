@@ -16,31 +16,33 @@ local DupeTab = Window:MakeTab({
     PremiumOnly = false
 })
 
--- DupeButton
+-- DupeButton1
 DupeTab:AddButton({
 	Name = "Equip Egg To Dupe",
 	Callback = function()
-      		OrionLib:MakeNotification({
-	Name = "Egg Selector",
-	Content = "Egg Equipped",
-	Image = "rbxassetid://4483345998",
-	Time = 5})
-end    
+	end    
 })
 
---DupeButton
+--DupeButton2
 DupeTab:AddButton({
 	Name = "Click To Dupe Eggs",
 	Callback = function()
+      		print("button pressed")
+OrionLib:MakeNotification({
+	Name = "Egg Selector",
+	Content = "Egg Equipped",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+	end
+})		
 
 --DupeNotification
 OrionLib:MakeNotification({
 	Name = "Duping Eggs....",
-	Content = "Duping is in process..[Takes around 4-5 minutes] Do not leave the game. 
-May require game restart to take effect.",
+	Content = "Duping is in process..[Takes around 4-5 minutes] Do not leave the game. May require game restart to take effect.",
 	Image = "rbxassetid://4483345998",
-	Time = 5})
-end    
+	Time = 5
 })
 
 --DupeParagraph
@@ -60,7 +62,7 @@ TradeTab:AddTextbox({
     Default = "Player",
     TextDisappear = false,
     Callback = function()
-end      
+	end      
 })
 
 -- TradeButton
@@ -68,14 +70,13 @@ TradeTab:AddButton({
 	Name = "Activate Freeze Trade",
 	Callback = function()
       		print("button pressed")
-end    
-})
-
 OrionLib:MakeNotification({
 	Name = "Freeze Trade Enabled",
 	Content = "Remove your offer. The victim can not see that you've removed items/pets.",
 	Image = "rbxassetid://4483345998",
 	Time = 5
+})
+	end
 })
 
 
@@ -90,14 +91,14 @@ FarmTab:AddToggle({
 	Name = "Pet Farm",
 	Default = false,
 	Callback = function(value)
-end    
+	end
 })
 
 FarmTab:AddToggle({
 	Name = "Baby Farm",
 	Default = false,
 	Callback = function()
-end    
+	end
 })
 
 -- FarmButton
@@ -105,7 +106,7 @@ FarmTab:AddButton({
     Name = "[TrustedScript] - Get AutoFarm Source",
     Callback = function()
           	print("button pressed")
-end    
+	end
 })
 
 --BucksTab
@@ -120,7 +121,7 @@ BucksTab:AddButton({
     Name = "Get Infinite Bucks",
     Callback = function()
         Print("button pressed")
-end    
+	end
 })
 
 -- MFR-NFR ChangerTab
@@ -135,7 +136,7 @@ ChangerTab:AddButton({
     Name = "MFR Changer-(Inventory)",
 	Callback = function()
       		print("button pressed")
-end    
+	end    
 })
 
 -- ChangerButton2
@@ -143,7 +144,7 @@ ChangerTab:AddButton({
     Name = "NFR Changer-(Inventory)",
     Callback = function()
             print("button pressed")
-  	end    
+	end
 })
 
 
