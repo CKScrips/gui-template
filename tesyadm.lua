@@ -20,6 +20,13 @@ local DupeTab = Window:MakeTab({
 DupeTab:AddButton({
 	Name = "Equip Egg To Dupe",
 	Callback = function()
+--EggEquipNotification
+OrionLib:MakeNotification({
+	Name = "Egg Selector",
+	Content = "Egg Equipped",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
 	end
 })
 
@@ -28,23 +35,14 @@ DupeTab:AddButton({
 	Name = "Click To Dupe Eggs",
 	Callback = function()
       		print("button pressed")
-	end
-})
-
---EggEquipNotification
-OrionLib:MakeNotification({
-	Name = "Egg Selector",
-	Content = "Egg Equipped",
-	Image = "rbxassetid://4483345998",
-	Time = 5
-})
-
 --DupeNotification
 OrionLib:MakeNotification({
 	Name = "Duping Eggs....",
 	Content = "Duping is in process..[Takes around 4-5 minutes] Do not leave the game. May require game restart to take effect.",
 	Image = "rbxassetid://4483345998",
 	Time = 5
+})
+	end
 })
 
 --DupeParagraph
