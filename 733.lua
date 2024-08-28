@@ -66,7 +66,7 @@ DupeTab:AddButton({
 	  Name = "Click To Dupe Pet",
 	  Callback = function()
 		    OrionLib:MakeNotification({
-	  Name = "Duping Egg....",
+	  Name = "Duping Pet....",
 	  Content = "Duping is in process..[May take up to 10 minutes] Do not leave the game.",
 	  Image = "rbxassetid://4483345998",
 	  Time = 10})
@@ -75,7 +75,7 @@ DupeTab:AddButton({
 })
 		
 --DupeParagraph
-DupeTab:AddParagraph("*READ*","The Feature - Dupe Eggs - Will Not Work if you're in a private server.")
+DupeTab:AddParagraph("*READ*","The Feature - Dupe Eggs/Pets -  will not work in private or full servers.")
 
 
 -- TradeTab
@@ -106,8 +106,8 @@ TradeTab:AddButton({
       		  print("button pressed")
   	end    
 })
-TradeTab:AddParagraph("*READ*","The function - Freeze Trade - will not work in private servers or full public servers.")
-TradeTab:AddParagraph("This trade needs to look and sound convincing. You must have pets of value to get your victim to accept it.")
+TradeTab:AddParagraph("*READ*","The function - Freeze Trade - will not work in private or full servers.")
+TradeTab:AddParagraph("cont.","This trade needs to look convincing. You must have pets of value so your victim will accept.")
 
 -- FarmTab
 local FarmTab = Window:MakeTab({
