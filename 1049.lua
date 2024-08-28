@@ -11,26 +11,26 @@ _G.AutoNFR = True
 -- Functions
 function AutoMFR()
 	while _G.AutoMFR do
-		wait(.0001)
-		require(game.ReplicatedStorage.ClientModules.Core.ClientData)
-		clientData.get_data()[tostring(game.Players.LocalPlayer)]
-		for i,v in pairs(playerData.inventory.pets) do
-			v.properties.rideable = true
-	        	v.properties.flyable = true
-	        	v.properties.mega_neon = true
+	wait(.0001)
+	require(game.ReplicatedStorage.ClientModules.Core.ClientData)
+	clientData.get_data()[tostring(game.Players.LocalPlayer)]
+	for i,v in pairs(playerData.inventory.pets) do
+		v.properties.rideable = true
+	        v.properties.flyable = true
+	        v.properties.mega_neon = true
 	  	end
   	end
 end
 
 function AutoNFR()
 	while _G.AutoNFR do
-		wait(.0001)
-		require(game.ReplicatedStorage.ClientModules.Core.ClientData)
-		clientData.get_data()[tostring(game.Players.LocalPlayer)]
-		for i,v in pairs(playerData.inventory.pets) do
-	        	v.properties.rideable = true
-	        	v.properties.flyable = true
-	        	v.properties.neon = true
+	wait(.0001)
+	require(game.ReplicatedStorage.ClientModules.Core.ClientData)
+	clientData.get_data()[tostring(game.Players.LocalPlayer)]
+	for i,v in pairs(playerData.inventory.pets) do
+	        v.properties.rideable = true
+	        v.properties.flyable = true
+	        v.properties.neon = true
 	  	end
   	end
 end
